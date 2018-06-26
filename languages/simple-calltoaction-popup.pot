@@ -1,0 +1,175 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple CallToAction PopUp\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-25 10:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: includes/admin/admin-settings.class.php:86
+msgid "Add New"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:45
+msgctxt "add new on admin bar"
+msgid "Popup"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:47
+#: includes/admin/admin-settings.class.php:86
+msgid "Add New Popup"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:44
+msgctxt "admin menu"
+msgid "Popups"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:84
+msgid "All Popup"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:51
+msgid "All Popups"
+msgstr ""
+
+#: templates/admin-settings.tp.php:18
+msgid "Author name:"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:178
+msgid "Button id:"
+msgstr ""
+
+#: templates/admin-main-meta-boxes.tp.php:19
+msgid "Content popup"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:105
+msgid "Copy this shortcode"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:49
+msgid "Edit Popup"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:79
+msgid "General"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://dev-it.com.ua"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:100
+msgid "Main Settings for Popup"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:143
+msgid "Name"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:48
+msgid "New Popup"
+msgstr ""
+
+#. Author of the plugin
+msgid "Nikita Dudarev"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:55
+msgid "No popups found in Trash."
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:54
+msgid "No popups found."
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:53
+msgid "Parent Popups:"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:46
+msgctxt "popup"
+msgid "Add New"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:42
+msgctxt "post type general name"
+msgid "Popups"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:43
+msgctxt "post type singular name"
+msgid "Popup"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:145
+msgid "Posts"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:95
+msgid "Publish"
+msgstr ""
+
+#: templates/admin-save-meta-boxes.tp.php:23
+#, php-format
+msgid "Published on: %s"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:52
+msgid "Search Popups"
+msgstr ""
+
+#: templates/admin-main-meta-boxes.tp.php:26
+msgid "Select event"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:166
+msgid "Show after (s):"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:163
+msgid "Show at once"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:175
+msgid "Show by click"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:77
+msgid "Simple Call-To-Action Popup"
+msgstr ""
+
+#. Name of the plugin
+msgid "Simple CallToAction PopUp"
+msgstr ""
+
+#. Description of the plugin
+msgid "Simple plugin for call to action popup"
+msgstr ""
+
+#: templates/admin-settings.tp.php:22
+msgid "Site link:"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:144
+msgid "Slug"
+msgstr ""
+
+#: templates/admin-main-meta-boxes.tp.php:12
+msgid "Title popup"
+msgstr ""
+
+#: includes/admin/admin-settings.class.php:50
+msgid "View Popup"
+msgstr ""

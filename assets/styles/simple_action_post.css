@@ -1,0 +1,111 @@
+#submitdiv_boxes .inside{
+    padding: 0;
+    margin: 0;
+}
+
+#view_shortcode .wrap .shortcode input{
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #ececec;
+    text-align: center;
+    border-radius: 1px;
+    border: 1px solid #ababab;
+}
+
+#view_shortcode .wrap .shortcode input:focus,
+#view_shortcode .wrap .shortcode input:active{
+    outline: none;
+    box-shadow: none;
+}
+
+#main_boxes .wrap .wrap-block{
+    margin-bottom: 10px;
+}
+
+#main_boxes .wrap .wrap-block:last-child{
+    margin: 0;
+}
+
+#main_boxes .wrap .title {
+    margin-bottom: 5px;
+    font-weight: 500;
+    width: 100%;
+}
+
+#main_boxes .wrap input[type="text"] {
+    width: 100%;
+    padding: 5px;
+}
+
+#main_boxes .wrap textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+#main_boxes .wrap .radio-block{
+    display: flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -moz-flex;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+#main_boxes .wrap .wrap-radio{
+    width: 80%;
+}
+
+#main_boxes .wrap .radio-block:last-child{
+    border: none;
+    padding: 0;
+}
+
+#main_boxes .wrap .radio-block .radio-value{
+    display: flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -moz-flex;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0;
+}
+
+#main_boxes .wrap .radio-block .radio-value input{
+    height: 21px;
+    margin-left: 5px;
+    width: 20%;
+}
+
+#main_boxes .wrap input[type="radio"] {
+    line-height: 1;
+    margin: 0 10px 0 0;
+}
+
+.wrap-block{
+    display: flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -moz-flex;
+    flex-flow: row wrap;
+}
+
+.wrap-block span.description{
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.wrap-block .settings-block{
+    width: calc(100% / 3 * 2);
+}
+
+.wrap-block .author-block{
+    width: calc((100% / 3) - 32px);
+    background-color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #8d8d8d;
+}
