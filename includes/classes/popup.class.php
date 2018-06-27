@@ -44,6 +44,12 @@ class Popup_Class {
 			wp_localize_script( 'simple-popup-script', 'button_id', $atts['button_id'] );
 		}
 
+		$title_color   = get_post_meta( $atts['id'], 'title_color', true );
+		$content_color = get_post_meta( $atts['id'], 'content_color', true );
+
+		$atts['title_color']   = ( $title_color !== '' ) ? 'style="color: ' . $title_color . '"' : '';
+		$atts['content_color'] = ( $title_color !== '' ) ? 'style="color: ' . $content_color . '"' : '';
+
 		wp_localize_script( 'simple-popup-script', 'popup_id', 'simple-popup-' . $atts['id'] );
 
 		$atts = apply_filters( 'simple_popup_popup_arguments', $atts );

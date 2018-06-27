@@ -11,7 +11,7 @@ POPUP_OBJ.event = {
         });
     },
     show_radio_value: function () {
-        jQuery('#main_boxes .event-block .wrap-radio input[type="radio"]').click(function(){
+        jQuery('#main_boxes .event-block .wrap-radio input[type="radio"]').click(function () {
             let value = jQuery(this).val();
 
             if (value == 'click') {
@@ -26,10 +26,15 @@ POPUP_OBJ.event = {
 
 
         });
+    },
+    color_picker: function () {
+        jQuery('.color-value-title').wpColorPicker();
+        jQuery('.color-value-description').wpColorPicker();
     }
 }
 
 jQuery(document).ready(function () {
     POPUP_OBJ.event.copy_shortcode();
     POPUP_OBJ.event.show_radio_value();
+    POPUP_OBJ.event.color_picker();
 });

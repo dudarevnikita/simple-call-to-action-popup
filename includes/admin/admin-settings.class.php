@@ -26,7 +26,7 @@ class SimpleCall_AdminSettings {
 
 		add_action( 'save_post', array( $this, 'save_metaboxes' ) );
 
-		// add_filter( 'manage_edit-' . $this->label . '_columns', array( $this, 'add_columns' ) );
+		//		add_filter( 'manage_edit-' . $this->label . '_columns', array( $this, 'add_columns' ) );
 
 		//Admin js scripts and css styles
 		add_action( 'admin_enqueue_scripts', array( $this, 'add_admin_scripts' ) );
@@ -133,6 +133,16 @@ class SimpleCall_AdminSettings {
 		if ( isset( $_POST['button_id'] ) ) {
 			update_post_meta( $post_id, 'button_id', sanitize_text_field( $_POST['button_id'] ) );
 		}
+
+		if ( isset( $_POST['title_color'] ) ) {
+			$title_color = ( isset( $_POST['title_color'] ) && $_POST['title_color'] != '' ) ? $_POST['title_color'] : '';
+			update_post_meta( $post_id, 'title_color', sanitize_text_field( $title_color ) );
+		}
+
+		if ( isset( $_POST['content_color'] ) ) {
+			$content_color = ( isset( $_POST['content_color'] ) && $_POST['content_color'] != '' ) ? $_POST['content_color'] : '';
+			update_post_meta( $post_id, 'content_color', sanitize_text_field( $content_color ) );
+		}
 	}
 
 	public function add_columns( $columns ) {
@@ -182,6 +192,10 @@ class SimpleCall_AdminSettings {
 					'style'   => ( ( $radio_show_value !== 'click' ) ? 'style="display: none"' : '' ),
 					'checked' => ( ( $radio_show_value == 'click' ) ? 'checked' : '' )
 				]
+			],
+			'color_picker'  => [
+				'title_color'   => get_post_meta( $post->ID, 'title_color', true ),
+				'content_color' => get_post_meta( $post->ID, 'content_color', true )
 			]
 		];
 
@@ -212,7 +226,10 @@ class SimpleCall_AdminSettings {
 	public function add_admin_scripts() {
 		if ( get_post_type() == $this->label || $_GET['page'] == $this->label_settings ) {
 
-			wp_enqueue_script( $this->label, SIMPLECALL_URL . 'assets/scripts/simple_action_post.js', array( 'jquery' ), '0.1', true );
+			wp_enqueue_script( $this->label, SIMPLECALL_URL . 'assets/scripts/simple_action_post.js', array(
+				'jquery',
+				'wp-color-picker'
+			), '0.1', true );
 
 			wp_enqueue_style( $this->label, SIMPLECALL_URL . 'assets/styles/simple_action_post.css' );
 

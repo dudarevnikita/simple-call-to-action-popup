@@ -14,10 +14,10 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <span></span>
             </a>
         </div>
-        <div class="title">
+        <div class="title" <?php echo $title_color ?>>
 		    <?php echo $title ?>
         </div>
-        <div class="content">
+        <div class="content" <?php echo $content_color ?>>
 		    <?php echo $content ?>
         </div>
     </div>

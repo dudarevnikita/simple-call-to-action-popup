@@ -1,9 +1,9 @@
-#submitdiv_boxes .inside{
+#submitdiv_boxes .inside {
     padding: 0;
     margin: 0;
 }
 
-#view_shortcode .wrap .shortcode input{
+#view_shortcode .wrap .shortcode input {
     width: 100%;
     margin: 5px 0;
     padding: 5px;
@@ -14,21 +14,29 @@
 }
 
 #view_shortcode .wrap .shortcode input:focus,
-#view_shortcode .wrap .shortcode input:active{
+#view_shortcode .wrap .shortcode input:active {
     outline: none;
     box-shadow: none;
 }
 
-#main_boxes .wrap .wrap-block{
+#main_boxes .wrap .wrap-block {
     margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
-#main_boxes .wrap .wrap-block:last-child{
+#main_boxes .wrap .wrap-block:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+#main_boxes .wrap .wrap-block:last-child {
     margin: 0;
 }
 
 #main_boxes .wrap .title {
-    margin-bottom: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
     font-weight: 500;
     width: 100%;
 }
@@ -43,28 +51,23 @@
     padding: 5px;
 }
 
-#main_boxes .wrap .radio-block{
+#main_boxes .wrap .radio-block {
     display: flex;
     display: -ms-flex;
     display: -o-flex;
     display: -moz-flex;
     margin-bottom: 10px;
-    padding-bottom: 10px;
     flex-flow: row wrap;
-    border-bottom: 1px solid #ccc;
+    width: 75%;
+}
+
+#main_boxes .wrap .wrap-radio {
     width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
-#main_boxes .wrap .wrap-radio{
-    width: 80%;
-}
-
-#main_boxes .wrap .radio-block:last-child{
-    border: none;
-    padding: 0;
-}
-
-#main_boxes .wrap .radio-block .radio-value{
+#main_boxes .wrap .radio-block .radio-value {
     display: flex;
     display: -ms-flex;
     display: -o-flex;
@@ -74,7 +77,7 @@
     margin: 5px 0;
 }
 
-#main_boxes .wrap .radio-block .radio-value input{
+#main_boxes .wrap .radio-block .radio-value input {
     height: 21px;
     margin-left: 5px;
     width: 20%;
@@ -85,7 +88,58 @@
     margin: 0 10px 0 0;
 }
 
-.wrap-block{
+#main_boxes .wrap .wrap-color {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#main_boxes .wrap .wrap-color:last-child {
+    margin-bottom: 0;
+}
+
+#main_boxes .wrap .wrap-color .wp-picker-container {
+    display: flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -moz-flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#main_boxes .wrap .wrap-color .wp-picker-container .button {
+    width: calc(100% / 7);
+}
+
+#main_boxes .wrap .wrap-color .wp-picker-container span.wp-picker-input-wrap {
+    display: flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -moz-flex;
+    align-items: center;
+    width: calc(100% / 4 * 3);
+}
+
+#main_boxes .wrap .wrap-color .wp-picker-container span.wp-picker-input-wrap label {
+    width: 10%;
+    display: block;
+    margin-left: 5px;
+}
+
+#main_boxes .wrap .wrap-color .wp-picker-container span.wp-picker-input-wrap .button {
+    margin-left: 5px;
+    width: 100px;
+}
+
+#main_boxes .wrap .wrap-color .wp-picker-container .wp-picker-holder {
+    display: block;
+    width: 100%;
+}
+
+#main_boxes .wrap .wrap-color .wp-picker-container .wp-picker-holder .iris-picker {
+    margin-top: 5px;
+}
+
+.wrap-block {
     display: flex;
     display: -ms-flex;
     display: -o-flex;
@@ -93,17 +147,17 @@
     flex-flow: row wrap;
 }
 
-.wrap-block span.description{
+.wrap-block span.description {
     font-size: 14px;
     font-weight: 600;
     font-style: normal;
 }
 
-.wrap-block .settings-block{
+.wrap-block .settings-block {
     width: calc(100% / 3 * 2);
 }
 
-.wrap-block .author-block{
+.wrap-block .author-block {
     width: calc((100% / 3) - 32px);
     background-color: #fff;
     padding: 10px 15px;

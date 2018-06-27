@@ -5,6 +5,9 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
+//$custom = get_post_custom( $post->ID );
+//$header_color = ( isset( $custom['header_color'][0] ) ) ? $custom['header_color'][0] : '';
 ?>
 <div class="wrap">
     <div class="title-block wrap-block">
@@ -37,6 +40,20 @@ if ( ! defined( 'ABSPATH' ) ) {
                     </div>
                 </div>
 			<?php endforeach; ?>
+        </div>
+        <div class="wrap-color">
+            <div class="title">
+				<?php _e( 'Select color for title', 'simple-calltoaction-popup' ) ?>
+            </div>
+            <input class="color-value-title" id="color_title" type="text" name="title_color"
+                   value="<?php echo $color_picker['title_color'] ?>"/>
+        </div>
+        <div class="wrap-color">
+            <div class="title">
+				<?php _e( 'Select color for content', 'simple-calltoaction-popup' ) ?>
+            </div>
+            <input class="color-value-description" id="content_color" type="text" name="content_color"
+                   value="<?php echo $color_picker['content_color'] ?>"/>
         </div>
     </div>
 
