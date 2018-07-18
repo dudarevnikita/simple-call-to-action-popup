@@ -1,10 +1,10 @@
 # Simple CallToAction PopUp
 * Contributors: nikitadudarev
-* Tags: popup, call_to_action
+* Tags: popup, call_to_action, GDPR
 * Requires at least: 4.9.0
 * Tested up to: 4.9.6
-* Requires PHP: 5.6
-* Stable tag: 0.1.0
+* Requires PHP: 5.6, 7.x
+* Stable tag: 0.2.1
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  
@@ -29,6 +29,9 @@ Use shorcode `[simple_popup id=""]`
 ## 0.2.0
 
 * colorpicker for title and content has been added
+
+## 0.2.1
+* some bugfixes
 
 ## 0.2.1
 * some bugfixes
