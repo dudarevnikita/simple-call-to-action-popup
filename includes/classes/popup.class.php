@@ -35,13 +35,13 @@ class Popup_Class {
 		$atts['event']   = get_post_meta( $atts['id'], 'event', true );
 
 		if ( $atts['event'] == 'once' ) {
-			$atts['show_seconds'] = get_post_meta( $atts['id'], 'show_seconds', true );
-			wp_localize_script( 'simple-popup-script', 'show_seconds', $atts['show_seconds'] * 1000 );
+			$show_seconds = get_post_meta( $atts['id'], 'show_seconds', true ) * 1000;
+			wp_localize_script( 'simple-popup-script', 'show_seconds', (string) $show_seconds );
 		}
 
 		if ( $atts['event'] == 'click' ) {
-			$atts['button_id'] = get_post_meta( $atts['id'], 'button_id', true );
-			wp_localize_script( 'simple-popup-script', 'button_id', $atts['button_id'] );
+			$button_id = get_post_meta( $atts['id'], 'button_id', true );
+			wp_localize_script( 'simple-popup-script', 'button_id', $button_id );
 		}
 
 		$title_color   = get_post_meta( $atts['id'], 'title_color', true );

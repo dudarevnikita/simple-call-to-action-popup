@@ -25,3 +25,10 @@ Use shorcode `[simple_popup id=""]`
 
 ## 0.1.0 
 * initializing plugin
+
+## 0.2.0
+
+* colorpicker for title and content has been added
+
+## 0.2.1
+* some bugfixes

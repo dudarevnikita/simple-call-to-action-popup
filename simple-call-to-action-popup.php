@@ -3,7 +3,7 @@
 Plugin Name: Simple CallToAction PopUp
 Plugin URI: https://dev-it.com.ua
 Description: Simple plugin for call to action popup
-Version: 0.1.0
+Version: 0.2.1
 Author: Nikita Dudarev
 Author URI: https://dev-it.com.ua
 License: GPLv2 or later

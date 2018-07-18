@@ -33,7 +33,7 @@ class SimpleCall_Main {
 			require_once SIMPLECALL_PATH . 'includes/classes/popup.class.php';
 
 			if ( class_exists( '\SimpleCallToActionPopup\Includes\Classes\Popup_Class' ) ) {
-				new Popup_Class();
+				$GLOBALS['SimpleCall_PopupClass'] = new Popup_Class();
 			}
 		}
 	}
